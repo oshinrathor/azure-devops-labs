@@ -51,7 +51,7 @@ chmod +x <file>
 ./<binary_file>
 ```
 
-### 9️⃣ Difference Between `sudo yum update` and `sudo yum upgrade`
+#### 9. Difference Between `sudo yum update` and `sudo yum upgrade`
 
 | Command                | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
@@ -62,7 +62,7 @@ chmod +x <file>
 
 ---
 
-### 🔟 Why Do We Use IPv4 Instead of IPv6?
+#### 10. Why Do We Use IPv4 Instead of IPv6?
 
 - **IPv4** is simpler, widely adopted, and compatible with most networks, firewalls, and ISPs.
 - **IPv6** provides more address space, but its adoption is still slower due to:
@@ -74,7 +74,7 @@ chmod +x <file>
 
 ---
 
-### 1️⃣1️⃣ Explanation of Unzipped Prometheus Files
+#### 11. Explanation of Unzipped Prometheus Files
 
 After downloading and unzipping Prometheus, you'll see the following files:
 
@@ -90,7 +90,7 @@ After downloading and unzipping Prometheus, you'll see the following files:
 
 ---
 
-## 12. How to Write a YAML File for Any Basic Job and Run It
+#### 12. How to Write a YAML File for Any Basic Job and Run It
 
 YAML (Yet Another Markup Language) is commonly used in CI/CD pipelines. Below is an example of a basic GitHub Actions workflow written in a `.yml` file to run a simple job:
 
@@ -120,6 +120,7 @@ jobs:
 
       - name: Run build
         run: npm run build
+```
 How to Run:
 Save this YAML file inside the .github/workflows/ directory of your GitHub repository.
 
@@ -127,7 +128,7 @@ Commit and push the file to the main branch.
 
 GitHub Actions will automatically trigger the workflow on every push to main.
 
-## 📊 13. Difference Between Metrics and Targets
+#### 13. Difference Between Metrics and Targets
 
 ### ✅ Metrics:
 Metrics are measurable values used to monitor the health, performance, or behavior of systems. They are collected over time and can be used to observe trends, detect anomalies, and trigger alerts.
@@ -153,7 +154,7 @@ Targets are the desired thresholds or goals for those metrics. They define what 
 
 ---
 
-## 🔧 14. Different Types of Resource Providers
+#### 14. Different Types of Resource Providers
 
 In Terraform and similar IaC tools, **resource providers** are plugins that allow the tool to interact with various platforms, services, and APIs. Different providers serve different purposes depending on the infrastructure or tools being managed.
 
