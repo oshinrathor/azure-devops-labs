@@ -49,6 +49,7 @@ sudo yum install wget unzip -y
 curl --version
 chmod +x <file>
 ./<binary_file>
+```
 
 ### 9️⃣ Difference Between `sudo yum update` and `sudo yum upgrade`
 
