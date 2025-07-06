@@ -74,26 +74,26 @@ NGINX is lightweight and fast, ideal for static content.
 
 Your HTML Code (index.html, style.css, etc.)
    │
-   ▼
+   >
 Dockerfile
    │
-   ▼
+   >
 Docker Build
  (Creates Docker Image)
    │
-   ▼
+   >
 Docker Image
  (App + NGINX + Runtime)
    │
-   ▼
+   >
 Docker Run
  (Starts Container)
    │
-   ▼
+   >
 Docker Container
  (Running NGINX server)
    │
-   ▼
+   >
 Access via: http://localhost:8080
 ---
 
