@@ -71,38 +71,30 @@ NGINX is lightweight and fast, ideal for static content.
 
 ## 7. Visual Diagram (Text-based)
 
-Your HTML Code (index.html, style.css, etc.)
-             │
-             ▼
-        Dockerfile
-     (instructions to build image)
-             │
-             ▼
-   ┌─────────────────────┐
-   │    Docker Build     │
-   │ (runs Dockerfile to │
-   │ create Docker Image)│
-   └─────────────────────┘
-             │
-             ▼
-       Docker Image
- (packaged app + web server + runtime)
-             │
-             ▼
-   ┌─────────────────────┐
-   │   Docker Run        │
-   │ (starts a container │
-   │  from the image)    │
-   └─────────────────────┘
-             │
-             ▼
-       Docker Container
- (running app, serving HTML via NGINX)
-             │
-             ▼
-     Access app via
-  http://localhost:8080
 
+Your HTML Code (index.html, style.css, etc.)
+   │
+   ▼
+Dockerfile
+   │
+   ▼
+Docker Build
+ (Creates Docker Image)
+   │
+   ▼
+Docker Image
+ (App + NGINX + Runtime)
+   │
+   ▼
+Docker Run
+ (Starts Container)
+   │
+   ▼
+Docker Container
+ (Running NGINX server)
+   │
+   ▼
+Access via: http://localhost:8080
 ---
 
 ## 8. Does the container keep running forever? Can we stop and store it?
